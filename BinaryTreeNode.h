@@ -1,6 +1,9 @@
+//BinaryTreeNode.h
+
 #ifndef BINARYTREENODE_H
 #define BINARYTREENODE_H
 
+//Class for the treenode
 class BinaryTreeNode {
 public:
   int data;

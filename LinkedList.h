@@ -1,8 +1,11 @@
+//LinkedList.h
+
 #ifndef LINKEDLIST_H
 #define LINKEDLIST_H
 
 #include <iostream>
 
+//class for node of tree
 class Node {
 public:
   int data;
