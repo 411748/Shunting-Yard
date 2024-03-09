@@ -1,5 +1,5 @@
 #include "Stack.h"
-#include <cstring>
+#include "Queue.h"
 #include <iostream>
 
 using namespace std;
@@ -12,6 +12,13 @@ int main() {
   cout << "Top element: " << stack.peek() << endl;
   cout << "Popped element: " << stack.pop() << endl;
   cout << "Popped element: " << stack.pop() << endl;
+  Queue queue;
+  queue.enqueue(5);
+  queue.enqueue(10);
+  queue.enqueue(15);
+  cout << "Dequeued element: " << queue.dequeue() << endl;
+  cout << "Dequeued element: " << queue.dequeue() << endl;
+
   return 0;
 }
 
