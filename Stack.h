@@ -1,17 +1,15 @@
 #ifndef STACK_H
 #define STACK_H
-#include "Node.h"
-#include <cstring>
+
+#include "LinkedList.h"
 
 class Stack {
 private:
-  Node* top;
+  LinkedList list;
 public:
-  Stack();
   void push(int data);
   int pop();
-  int peek();
-  bool isEmpty();
+  bool isEmpty() const;
 };
 
-#endif 
+#endif

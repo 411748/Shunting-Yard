@@ -1,18 +1,16 @@
 #ifndef QUEUE_H
 #define QUEUE_H
 
-#include "Node.h"
+#include "LinkedList.h"
 
 class Queue {
 private:
-  Node* front;
-  Node* rear;
-
+  LinkedList list;
 public:
-  Queue();
   void enqueue(int data);
   int dequeue();
-  bool isEmpty();
+  bool isEmpty() const;
 };
 
 #endif 
+

@@ -4,34 +4,14 @@
 
 using namespace std;
 
-Stack::Stack() : top(nullptr) {}
-
 void Stack::push(int data) {
-  Node* newNode = new Node(data);
-  newNode->next = top;
-  top = newNode;
+  list.append(data);
 }
 
 int Stack::pop() {
-  if (isEmpty()) {
-    cout << "Stack empty" << endl;
-    return -1; 
-  }
-  int popped = top->data;
-  Node* temp = top;
-  top = top->next;
-  delete temp;
-  return popped;
+  return list.pop();
 }
 
-int Stack::peek() {
-  if (isEmpty()) {
-    cout << "Stack empty" << endl;
-    return -1; 
-  }
-  return top->data;
-}
-
-bool Stack::isEmpty() {
-  return top == nullptr;
+bool Stack::isEmpty() const {
+  return list.isEmpty();
 }
